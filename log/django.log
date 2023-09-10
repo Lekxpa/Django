@@ -1,0 +1,79 @@
+Watching for file changes with StatReloader
+"GET /number/ HTTP/1.1" 200 2
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+D:\Python\Django\my_app_2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+D:\Python\Django\seminars_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\Django\seminars_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+"GET /heads/ HTTP/1.1" 200 5
+D:\Python\Django\seminars_proj\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python\Django\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-10 23:41:45,022 autoreload 10648 14440 Watching for file changes with StatReloader
+INFO 2023-09-10 23:41:50,881 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:51,560 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:52,025 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:52,408 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:52,755 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:53,151 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:41:53,596 basehttp 10648 19624 "GET /heads/ HTTP/1.1" 200 5
+INFO 2023-09-10 23:45:14,421 autoreload 10648 14440 D:\Python\Django\my_app_2\views.py changed, reloading.
+INFO 2023-09-10 23:45:18,484 autoreload 4448 23668 Watching for file changes with StatReloader
+INFO 2023-09-10 23:46:28,980 autoreload 4448 23668 D:\Python\Django\my_app_2\views.py changed, reloading.
+INFO 2023-09-10 23:46:31,291 autoreload 16524 7504 Watching for file changes with StatReloader
+INFO 2023-09-11 00:16:51,957 autoreload 23128 24556 Watching for file changes with StatReloader
+INFO 2023-09-11 00:17:05,723 basehttp 23128 7504 "GET /heads/ HTTP/1.1" 200 5
+WARNING 2023-09-11 00:17:13,639 log 23128 7504 Not Found: /main_page
+WARNING 2023-09-11 00:17:13,639 basehttp 23128 7504 "GET /main_page HTTP/1.1" 404 3124
+INFO 2023-09-11 00:17:37,378 basehttp 23128 7504 "GET /main HTTP/1.1" 301 0
+INFO 2023-09-11 00:17:37,388 basehttp 23128 20764 "GET /main/ HTTP/1.1" 200 605
+INFO 2023-09-11 00:17:53,705 basehttp 23128 20764 "GET /about_me HTTP/1.1" 301 0
+INFO 2023-09-11 00:17:53,715 basehttp 23128 9448 "GET /about_me/ HTTP/1.1" 200 223
+INFO 2023-09-11 00:18:52,547 autoreload 23128 24556 D:\Python\Django\my_HW_01\views.py changed, reloading.
+INFO 2023-09-11 00:18:53,941 autoreload 8092 23636 Watching for file changes with StatReloader
+INFO 2023-09-11 00:22:21,689 autoreload 8092 23636 D:\Python\Django\my_HW_01\views.py changed, reloading.
+INFO 2023-09-11 00:22:26,681 autoreload 10204 23564 Watching for file changes with StatReloader
+INFO 2023-09-11 00:22:34,806 basehttp 10204 22740 "GET /about_me/ HTTP/1.1" 200 316
+WARNING 2023-09-11 00:22:51,972 log 10204 22740 Not Found: /naim
+WARNING 2023-09-11 00:22:51,973 basehttp 10204 22740 "GET /naim HTTP/1.1" 404 3109
+INFO 2023-09-11 00:22:57,073 basehttp 10204 22740 "GET /main/ HTTP/1.1" 200 341
+INFO 2023-09-11 00:24:21,539 autoreload 10204 23564 D:\Python\Django\my_HW_01\views.py changed, reloading.
+INFO 2023-09-11 00:24:23,271 autoreload 1544 7556 Watching for file changes with StatReloader
+INFO 2023-09-11 00:24:29,795 basehttp 1544 23444 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 00:24:44,302 basehttp 1544 23444 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-11 01:09:30,442 autoreload 13688 4260 Watching for file changes with StatReloader
+INFO 2023-09-11 01:09:40,474 basehttp 13688 21884 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-11 01:09:41,872 basehttp 13688 21884 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-11 01:09:46,044 basehttp 13688 21884 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 01:13:56,357 autoreload 15596 20068 Watching for file changes with StatReloader
+INFO 2023-09-11 01:14:21,674 autoreload 8900 23868 Watching for file changes with StatReloader
+INFO 2023-09-11 01:14:30,380 basehttp 8900 11568 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 01:41:12,887 autoreload 24344 13128 Watching for file changes with StatReloader
+INFO 2023-09-11 01:41:23,792 basehttp 24344 25736 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 01:41:25,438 basehttp 24344 25736 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 01:41:32,421 basehttp 24344 26292 "GET /about_me/ HTTP/1.1" 200 316

@@ -1,0 +1,32 @@
+Результат: TAILS
+Результат: TAILS
+Результат: TAILS
+Результат: TAILS
+Результат: TAILS
+Результат: HEADS
+Результат: HEADS
+Результат: TAILS
+Результат: HEADS
+result='TAILS'
+result='TAILS'
+result='HEADS'
+result='TAILS'
+result='TAILS'
+result='HEADS'
+result='HEADS'
+result='HEADS'
+result='HEADS'
+result='HEADS'
+result='HEADS'
+result='TAILS'
+result='TAILS'
+result='TAILS'
+result='HEADS'
+INFO 2023-09-10 23:41:50,880 views 10648 19624 result='TAILS'
+INFO 2023-09-10 23:41:51,559 views 10648 19624 result='HEADS'
+INFO 2023-09-10 23:41:52,024 views 10648 19624 result='HEADS'
+INFO 2023-09-10 23:41:52,407 views 10648 19624 result='HEADS'
+INFO 2023-09-10 23:41:52,754 views 10648 19624 result='HEADS'
+INFO 2023-09-10 23:41:53,149 views 10648 19624 result='TAILS'
+INFO 2023-09-10 23:41:53,595 views 10648 19624 result='HEADS'
+INFO 2023-09-11 00:17:05,721 views 23128 7504 result='HEADS'
