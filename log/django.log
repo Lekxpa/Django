@@ -77,3 +77,11 @@ INFO 2023-09-11 01:41:12,887 autoreload 24344 13128 Watching for file changes wi
 INFO 2023-09-11 01:41:23,792 basehttp 24344 25736 "GET /main/ HTTP/1.1" 200 466
 INFO 2023-09-11 01:41:25,438 basehttp 24344 25736 "GET /main/ HTTP/1.1" 200 466
 INFO 2023-09-11 01:41:32,421 basehttp 24344 26292 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-11 01:44:56,679 autoreload 26452 23108 Watching for file changes with StatReloader
+INFO 2023-09-11 01:45:15,517 basehttp 26452 17196 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-11 01:45:21,139 basehttp 26452 14844 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 08:43:34,505 autoreload 4788 21200 Watching for file changes with StatReloader
+INFO 2023-09-11 08:43:39,011 basehttp 4788 11984 "GET /main/ HTTP/1.1" 200 466
+INFO 2023-09-11 08:43:48,767 basehttp 4788 11984 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-12 11:18:45,867 autoreload 18204 2540 Watching for file changes with StatReloader
+INFO 2023-09-14 00:28:26,704 autoreload 15140 12036 Watching for file changes with StatReloader
