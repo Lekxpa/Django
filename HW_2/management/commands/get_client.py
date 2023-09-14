@@ -3,13 +3,13 @@ from HW_2.models import Client
 
 
 class Command(BaseCommand):
-    help = "Get all clients by address."
+    help = "Get all clients by phone_number"
 
     def add_arguments(self, parser):
-        parser.add_argument('address', type=str, help='Client address')
+        parser.add_argument('phone_number', type=str, help='Client phone_number')
 
     def handle(self, *args, **kwargs):
-        address = kwargs.get('address')
-        client = Client.objects.filter(address__iexact=address)
-        intro = f'All clients with address {address}\n'
+        phone_number = kwargs.get('phone_number')
+        client = Client.objects.filter(phone_number__iexact=phone_number)
+        intro = f'All clients with address {phone_number}\n'
         self.stdout.write(f'{intro} {client}')
