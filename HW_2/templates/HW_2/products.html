@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+<ul>
+    {% for product in products %}
+    {% if product.published %}
+
+        <li><a href="'#"> {{ product.title }}</a> </li>
+        {% else %}
+        <li> {{ product.title }}</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

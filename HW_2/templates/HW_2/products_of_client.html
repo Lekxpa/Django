@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h2>Заказы покупателя: {{ client.client_name }}</h2>
+    <h2>Продукты, заказанные покупателем: {{ client.name }}</h2>
     <table>
         {% for prod in products %}
             <p>{{ prod }}</p>

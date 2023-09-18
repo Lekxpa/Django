@@ -11,5 +11,5 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         phone_number = kwargs.get('phone_number')
         client = Client.objects.filter(phone_number__iexact=phone_number)
-        intro = f'All clients with address {phone_number}\n'
+        intro = f'All clients with phone_number {phone_number}\n'
         self.stdout.write(f'{intro} {client}')

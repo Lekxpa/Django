@@ -85,3 +85,996 @@ INFO 2023-09-11 08:43:39,011 basehttp 4788 11984 "GET /main/ HTTP/1.1" 200 466
 INFO 2023-09-11 08:43:48,767 basehttp 4788 11984 "GET /about_me/ HTTP/1.1" 200 316
 INFO 2023-09-12 11:18:45,867 autoreload 18204 2540 Watching for file changes with StatReloader
 INFO 2023-09-14 00:28:26,704 autoreload 15140 12036 Watching for file changes with StatReloader
+INFO 2023-09-18 11:53:52,272 autoreload 16096 4220 Watching for file changes with StatReloader
+INFO 2023-09-18 12:03:52,150 autoreload 16096 4220 D:\Django_HW\seminars_proj\urls.py changed, reloading.
+INFO 2023-09-18 12:03:53,214 autoreload 22768 24260 Watching for file changes with StatReloader
+INFO 2023-09-18 12:04:19,916 autoreload 22768 24260 D:\Django_HW\seminars_proj\urls.py changed, reloading.
+INFO 2023-09-18 12:04:20,956 autoreload 23412 17556 Watching for file changes with StatReloader
+INFO 2023-09-18 12:05:54,896 autoreload 23412 17556 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 12:05:55,889 autoreload 21728 24176 Watching for file changes with StatReloader
+INFO 2023-09-18 12:06:20,644 autoreload 21728 24176 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 12:06:21,605 autoreload 23260 3212 Watching for file changes with StatReloader
+INFO 2023-09-18 12:07:08,830 autoreload 23260 3212 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 12:07:09,792 autoreload 10604 8128 Watching for file changes with StatReloader
+INFO 2023-09-18 13:58:08,861 autoreload 18788 20340 Watching for file changes with StatReloader
+INFO 2023-09-18 13:58:16,489 basehttp 18788 23568 "GET / HTTP/1.1" 200 11
+WARNING 2023-09-18 13:58:27,238 log 18788 23568 Not Found: /client
+WARNING 2023-09-18 13:58:27,239 basehttp 18788 23568 "GET /client HTTP/1.1" 404 3318
+ERROR 2023-09-18 13:58:31,940 log 18788 23568 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 13:58:31,963 basehttp 18788 23568 "GET /client/1 HTTP/1.1" 500 134713
+INFO 2023-09-18 14:00:51,859 autoreload 22952 16564 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:00:57,472 log 22952 12740 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 14:00:57,497 basehttp 22952 12740 "GET /client/1 HTTP/1.1" 500 134850
+INFO 2023-09-18 14:03:52,001 autoreload 22952 16564 D:\Django_HW\seminars_proj\urls.py changed, reloading.
+INFO 2023-09-18 14:03:53,056 autoreload 24252 11236 Watching for file changes with StatReloader
+INFO 2023-09-18 14:06:41,628 autoreload 20572 22980 Watching for file changes with StatReloader
+WARNING 2023-09-18 14:06:46,796 log 20572 2828 Not Found: /client/1
+WARNING 2023-09-18 14:06:46,797 basehttp 20572 2828 "GET /client/1 HTTP/1.1" 404 3233
+WARNING 2023-09-18 14:06:58,802 log 20572 2828 Not Found: /client
+WARNING 2023-09-18 14:06:58,804 basehttp 20572 2828 "GET /client HTTP/1.1" 404 3227
+INFO 2023-09-18 14:08:08,936 basehttp 20572 2828 "GET /about_me HTTP/1.1" 301 0
+INFO 2023-09-18 14:08:08,944 basehttp 20572 16620 "GET /about_me/ HTTP/1.1" 200 316
+INFO 2023-09-18 14:09:24,845 autoreload 20572 22980 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:09:26,070 autoreload 19796 19140 Watching for file changes with StatReloader
+INFO 2023-09-18 14:10:11,047 autoreload 19796 19140 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:10:12,396 autoreload 23580 24236 Watching for file changes with StatReloader
+INFO 2023-09-18 14:11:03,711 autoreload 23580 24236 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:11:04,659 autoreload 16964 2412 Watching for file changes with StatReloader
+INFO 2023-09-18 14:11:10,612 basehttp 16964 680 "GET / HTTP/1.1" 200 11
+WARNING 2023-09-18 14:11:18,875 log 16964 680 Not Found: /client/1
+WARNING 2023-09-18 14:11:18,876 basehttp 16964 680 "GET /client/1 HTTP/1.1" 404 3233
+WARNING 2023-09-18 14:11:35,814 log 16964 680 Not Found: /online_shop
+WARNING 2023-09-18 14:11:35,816 basehttp 16964 680 "GET /online_shop HTTP/1.1" 404 3242
+ERROR 2023-09-18 14:11:46,845 log 16964 680 Internal Server Error: /online_shop/client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 14:11:46,865 basehttp 16964 680 "GET /online_shop/client/1 HTTP/1.1" 500 134867
+WARNING 2023-09-18 14:11:55,683 log 16964 680 Not Found: /online_shop
+WARNING 2023-09-18 14:11:55,685 basehttp 16964 680 "GET /online_shop HTTP/1.1" 404 3242
+INFO 2023-09-18 14:12:58,317 autoreload 16964 2412 D:\Django_HW\seminars_proj\urls.py changed, reloading.
+INFO 2023-09-18 14:12:59,332 autoreload 19092 17296 Watching for file changes with StatReloader
+INFO 2023-09-18 14:15:20,318 autoreload 19092 17296 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:15:21,533 autoreload 10152 24116 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:15:27,112 log 10152 23204 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:15:27,117 basehttp 10152 23204 "GET /client/1 HTTP/1.1" 500 64048
+INFO 2023-09-18 14:15:55,806 autoreload 10152 24116 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:15:56,965 autoreload 15580 22688 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:16:00,036 log 15580 23128 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:16:00,040 basehttp 15580 23128 "GET /client/1 HTTP/1.1" 500 64185
+ERROR 2023-09-18 14:16:05,523 log 15580 23128 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:16:05,528 basehttp 15580 23128 "GET /client/1 HTTP/1.1" 500 64185
+INFO 2023-09-18 14:17:37,217 autoreload 17588 21776 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:17:40,370 log 17588 23648 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:17:40,376 basehttp 17588 23648 "GET /client/1 HTTP/1.1" 500 64185
+ERROR 2023-09-18 14:17:41,370 log 17588 23648 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:17:41,378 basehttp 17588 23648 "GET /client/1 HTTP/1.1" 500 64185
+ERROR 2023-09-18 14:17:44,033 log 17588 23648 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:17:44,037 basehttp 17588 23648 "GET /client/1 HTTP/1.1" 500 64185
+INFO 2023-09-18 14:17:55,930 autoreload 22932 22604 Watching for file changes with StatReloader
+INFO 2023-09-18 14:18:01,192 basehttp 22932 20548 "GET / HTTP/1.1" 200 11
+ERROR 2023-09-18 14:18:10,009 log 22932 20548 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: product_of_client() got an unexpected keyword argument 'customer_id'
+ERROR 2023-09-18 14:18:10,014 basehttp 22932 20548 "GET /client/1 HTTP/1.1" 500 64048
+WARNING 2023-09-18 14:18:19,422 log 22932 20548 Not Found: /customer_id/1
+WARNING 2023-09-18 14:18:19,423 basehttp 22932 20548 "GET /customer_id/1 HTTP/1.1" 404 3339
+INFO 2023-09-18 14:18:44,376 autoreload 22932 22604 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:18:45,411 autoreload 21796 23400 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:18:53,041 log 21796 20204 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 12, in product_of_client
+    orders = Order.objects.filter(client_id=client_id).all()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'client_id' into field. Choices are: customer, customer_id, date_ordered, id, products, total_price
+ERROR 2023-09-18 14:18:53,065 basehttp 21796 20204 "GET /client/1 HTTP/1.1" 500 114406
+INFO 2023-09-18 14:19:46,849 autoreload 21796 23400 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:19:47,887 autoreload 23932 23616 Watching for file changes with StatReloader
+INFO 2023-09-18 14:20:03,372 autoreload 23932 23616 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:20:04,501 autoreload 22064 15000 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:20:08,173 log 22064 12596 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 14:20:08,197 basehttp 22064 12596 "GET /client/1 HTTP/1.1" 500 134836
+INFO 2023-09-18 14:23:41,967 autoreload 21660 22612 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:23:50,716 log 21660 24344 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 14:23:50,739 basehttp 21660 24344 "GET /client/1 HTTP/1.1" 500 134836
+INFO 2023-09-18 14:26:39,847 autoreload 21476 23260 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:26:43,912 log 21476 23476 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 14:26:43,933 basehttp 21476 23476 "GET /client/1 HTTP/1.1" 500 134836
+INFO 2023-09-18 14:27:47,953 autoreload 5448 5992 Watching for file changes with StatReloader
+ERROR 2023-09-18 14:27:51,445 log 5448 5616 Internal Server Error: /client/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: templates.base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 15, in product_of_client
+    return render(request, 'HW_2/products_of_client.html', {'client': client,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: templates.base.html
+ERROR 2023-09-18 14:27:51,466 basehttp 5448 5616 "GET /client/1 HTTP/1.1" 500 135136
+INFO 2023-09-18 14:40:39,152 autoreload 5448 5992 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:40:41,177 autoreload 664 16184 Watching for file changes with StatReloader
+INFO 2023-09-18 14:41:35,822 autoreload 664 16184 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:41:36,826 autoreload 12740 8428 Watching for file changes with StatReloader
+INFO 2023-09-18 14:41:42,552 autoreload 12740 8428 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:41:43,798 autoreload 11236 21584 Watching for file changes with StatReloader
+INFO 2023-09-18 14:43:26,709 autoreload 11236 21584 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:43:27,980 autoreload 14964 17712 Watching for file changes with StatReloader
+INFO 2023-09-18 14:44:04,054 autoreload 14964 17712 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:44:05,847 autoreload 21648 13868 Watching for file changes with StatReloader
+INFO 2023-09-18 14:44:51,110 autoreload 21648 13868 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:44:52,196 autoreload 21900 24280 Watching for file changes with StatReloader
+INFO 2023-09-18 14:47:17,265 autoreload 21900 24280 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:47:18,299 autoreload 24544 22864 Watching for file changes with StatReloader
+INFO 2023-09-18 14:47:52,443 autoreload 24544 22864 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:47:53,612 autoreload 18476 9424 Watching for file changes with StatReloader
+INFO 2023-09-18 14:48:42,279 autoreload 18476 9424 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:48:43,615 autoreload 21940 24132 Watching for file changes with StatReloader
+INFO 2023-09-18 14:49:40,945 autoreload 21940 24132 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:49:42,279 autoreload 11496 17524 Watching for file changes with StatReloader
+INFO 2023-09-18 14:49:47,285 autoreload 11496 17524 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:49:48,322 autoreload 21324 20548 Watching for file changes with StatReloader
+INFO 2023-09-18 14:50:42,429 autoreload 21324 20548 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 14:50:43,542 autoreload 11840 17436 Watching for file changes with StatReloader
+INFO 2023-09-18 14:56:55,059 autoreload 11840 17436 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:56:56,519 autoreload 2404 7312 Watching for file changes with StatReloader
+INFO 2023-09-18 14:57:56,192 autoreload 2404 7312 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:57:57,312 autoreload 6264 24564 Watching for file changes with StatReloader
+INFO 2023-09-18 14:58:28,057 autoreload 6264 24564 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 14:58:29,145 autoreload 23016 15612 Watching for file changes with StatReloader
+INFO 2023-09-18 14:59:29,633 autoreload 17412 17100 Watching for file changes with StatReloader
+ERROR 2023-09-18 15:01:18,913 log 17412 11168 Internal Server Error: /products/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 15:01:18,932 basehttp 17412 11168 "GET /products/1 HTTP/1.1" 500 128540
+INFO 2023-09-18 15:04:33,945 autoreload 19864 16564 Watching for file changes with StatReloader
+ERROR 2023-09-18 15:05:10,442 log 19864 13924 Internal Server Error: /products/1
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2023-09-18 15:05:10,462 basehttp 19864 13924 "GET /products/1 HTTP/1.1" 500 128677
+INFO 2023-09-18 15:05:44,855 basehttp 19864 13924 "GET /products/1 HTTP/1.1" 200 157
+INFO 2023-09-18 15:05:47,997 basehttp 19864 13924 "GET /products/1 HTTP/1.1" 200 157
+INFO 2023-09-18 15:06:03,990 basehttp 19864 13924 "GET /products/1 HTTP/1.1" 200 157
+INFO 2023-09-18 15:06:07,154 basehttp 19864 13924 "GET /products/1 HTTP/1.1" 200 157
+INFO 2023-09-18 15:12:31,297 basehttp 19864 9568 "GET /products/1 HTTP/1.1" 200 157
+INFO 2023-09-18 15:13:06,151 basehttp 19864 9568 "GET /client/1 HTTP/1.1" 200 254
+INFO 2023-09-18 15:21:50,675 autoreload 19716 10124 Watching for file changes with StatReloader
+INFO 2023-09-18 15:21:52,131 basehttp 19716 17828 "GET /client/1 HTTP/1.1" 200 282
+INFO 2023-09-18 15:26:17,353 autoreload 19716 10124 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 15:26:18,494 autoreload 21760 8712 Watching for file changes with StatReloader
+INFO 2023-09-18 15:27:11,672 autoreload 21760 8712 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 15:27:13,144 autoreload 21640 22636 Watching for file changes with StatReloader
+INFO 2023-09-18 15:28:47,727 autoreload 21640 22636 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 15:28:48,869 autoreload 17076 18240 Watching for file changes with StatReloader
+INFO 2023-09-18 15:29:47,407 autoreload 17076 18240 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 15:29:48,432 autoreload 22968 22680 Watching for file changes with StatReloader
+INFO 2023-09-18 15:30:15,198 basehttp 22968 20864 "GET /client/1 HTTP/1.1" 200 282
+INFO 2023-09-18 15:30:17,298 basehttp 22968 20864 "GET /client/1 HTTP/1.1" 200 282
+WARNING 2023-09-18 15:30:38,160 log 22968 20864 Not Found: /orders/year/2023
+WARNING 2023-09-18 15:30:38,161 basehttp 22968 20864 "GET /orders/year/2023 HTTP/1.1" 404 4223
+INFO 2023-09-18 15:30:51,473 basehttp 22968 20864 "GET /orders/year/2023/1 HTTP/1.1" 301 0
+ERROR 2023-09-18 15:30:51,581 log 22968 14136 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 15:30:51,591 basehttp 22968 14136 "GET /orders/year/2023/1/ HTTP/1.1" 500 82509
+INFO 2023-09-18 15:33:47,936 autoreload 22968 22680 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 15:33:48,900 autoreload 20728 19452 Watching for file changes with StatReloader
+ERROR 2023-09-18 15:33:53,707 log 20728 24112 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 15:33:53,716 basehttp 20728 24112 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+ERROR 2023-09-18 15:33:55,550 log 20728 24112 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 15:33:55,558 basehttp 20728 24112 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+ERROR 2023-09-18 15:33:56,589 log 20728 24112 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 15:33:56,600 basehttp 20728 24112 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+INFO 2023-09-18 15:37:37,529 autoreload 20728 19452 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 15:37:38,583 autoreload 22412 2580 Watching for file changes with StatReloader
+ERROR 2023-09-18 15:37:42,496 log 22412 4844 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 15:37:42,505 basehttp 22412 4844 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+INFO 2023-09-18 16:39:22,296 autoreload 22412 2580 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 16:39:23,693 autoreload 9744 18256 Watching for file changes with StatReloader
+INFO 2023-09-18 16:47:15,284 autoreload 9744 18256 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 16:47:16,523 autoreload 19084 4156 Watching for file changes with StatReloader
+INFO 2023-09-18 16:50:14,590 autoreload 19084 4156 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 16:50:15,917 autoreload 17820 22004 Watching for file changes with StatReloader
+INFO 2023-09-18 16:50:21,857 autoreload 23576 7432 Watching for file changes with StatReloader
+ERROR 2023-09-18 16:50:26,402 log 23576 19716 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:50:26,411 basehttp 23576 19716 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+ERROR 2023-09-18 16:50:29,792 log 23576 19716 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:50:29,801 basehttp 23576 19716 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+ERROR 2023-09-18 16:50:31,299 log 23576 19716 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:50:31,307 basehttp 23576 19716 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+ERROR 2023-09-18 16:50:32,267 log 23576 19716 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:50:32,275 basehttp 23576 19716 "GET /orders/year/2023/1/ HTTP/1.1" 500 82646
+INFO 2023-09-18 16:52:00,297 basehttp 23576 19716 "GET /products/1 HTTP/1.1" 200 277
+INFO 2023-09-18 16:52:17,746 basehttp 23576 19716 "GET /client/1 HTTP/1.1" 200 282
+ERROR 2023-09-18 16:53:19,683 log 23576 19716 Internal Server Error: /orders/year/2023/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllYearProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:53:19,691 basehttp 23576 19716 "GET /orders/year/2023/1/ HTTP/1.1" 500 82509
+ERROR 2023-09-18 16:55:42,463 log 23576 19716 Internal Server Error: /orders/monthly/2023/01/1/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 226, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\list.py", line 124, in get_context_data
+    queryset = object_list if object_list is not None else self.object_list
+                                                           ^^^^^^^^^^^^^^^^
+AttributeError: 'AllMonthProducts' object has no attribute 'object_list'
+ERROR 2023-09-18 16:55:42,473 basehttp 23576 19716 "GET /orders/monthly/2023/01/1/ HTTP/1.1" 500 82702
+INFO 2023-09-18 17:01:42,308 autoreload 23096 23924 Watching for file changes with StatReloader
+INFO 2023-09-18 17:01:49,759 basehttp 23096 23516 "GET /client/1 HTTP/1.1" 200 282
+INFO 2023-09-18 17:02:00,122 basehttp 23096 23516 "GET /client/10 HTTP/1.1" 200 285
+WARNING 2023-09-18 17:02:10,860 log 23096 23516 Not Found: /client/15
+WARNING 2023-09-18 17:02:10,865 basehttp 23096 23516 "GET /client/15 HTTP/1.1" 404 3493
+INFO 2023-09-18 17:02:15,166 basehttp 23096 23516 "GET /client/14 HTTP/1.1" 200 282
+INFO 2023-09-18 17:02:19,765 basehttp 23096 23516 "GET /client/11 HTTP/1.1" 200 285
+INFO 2023-09-18 17:02:57,094 autoreload 23096 23924 D:\Django_HW\HW_2\views.py changed, reloading.
+INFO 2023-09-18 17:02:58,214 autoreload 10956 23568 Watching for file changes with StatReloader
+INFO 2023-09-18 17:04:00,665 autoreload 10956 23568 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 17:04:01,815 autoreload 23848 18476 Watching for file changes with StatReloader
+INFO 2023-09-18 17:18:17,706 autoreload 23848 18476 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-18 17:18:18,845 autoreload 19676 23028 Watching for file changes with StatReloader

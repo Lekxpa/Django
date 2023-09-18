@@ -10,7 +10,7 @@ class Client(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return f'{self.name} {self.email} {self.phone_number} {self.address} {self.date_of_registration}'
+        return f'{self.id} {self.name} {self.email} {self.phone_number} {self.address} {self.date_of_registration}'
 
 
 class Product(models.Model):
@@ -23,8 +23,7 @@ class Product(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.name_of_product
- 
+        return f'{self.id} {self.name_of_product} {self.description}, {self.price}, {self.quantity}, {self.date_of_add}'
 
 
 class Order(models.Model):
@@ -36,4 +35,4 @@ class Order(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return f'Заказ {self.pk} клиента - {self.customer}'
+        return f'Заказ {self.pk} клиента - {self.customer}, {self.products}, ст-сть - {self.total_price}'
