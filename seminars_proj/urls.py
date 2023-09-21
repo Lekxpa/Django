@@ -24,5 +24,4 @@ urlpatterns = [
     path('', include('my_app_2.urls')),
     path('', include('my_HW_01.urls')),
     path('', include('HW_2.urls')),
-    # path('online_shop/', include('HW_2.urls')),
 ]
