@@ -124,6 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -202,6 +204,11 @@ LOGGING = {
             'filename': './log/django_3.log', # 'filename': '.log/django.log'
             'formatter': 'verbose',
         },
+        'file_4': {
+            'class': 'logging.FileHandler',
+            'filename': './log/django_4.log', # 'filename': '.log/django.log'
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -215,6 +222,11 @@ LOGGING = {
         },
         'my_HW_01': {
             'handlers': ['console', 'file_3'], # 'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'HW_2': {
+            'handlers': ['console', 'file_4'], # 'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
         },

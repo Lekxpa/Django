@@ -1078,3 +1078,78 @@ INFO 2023-09-18 17:04:00,665 autoreload 10956 23568 D:\Django_HW\HW_2\urls.py ch
 INFO 2023-09-18 17:04:01,815 autoreload 23848 18476 Watching for file changes with StatReloader
 INFO 2023-09-18 17:18:17,706 autoreload 23848 18476 D:\Django_HW\HW_2\urls.py changed, reloading.
 INFO 2023-09-18 17:18:18,845 autoreload 19676 23028 Watching for file changes with StatReloader
+INFO 2023-09-21 12:54:05,833 autoreload 15980 18416 Watching for file changes with StatReloader
+INFO 2023-09-21 12:54:13,319 basehttp 15980 7608 "GET / HTTP/1.1" 200 11
+WARNING 2023-09-21 12:54:24,643 log 15980 7608 Not Found: /orders
+WARNING 2023-09-21 12:54:24,644 basehttp 15980 7608 "GET /orders HTTP/1.1" 404 3498
+INFO 2023-09-21 12:54:31,622 basehttp 15980 7608 "GET /product/add/ HTTP/1.1" 200 1492
+ERROR 2023-09-21 12:55:09,205 log 15980 7608 Internal Server Error: /product/add/
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table HW_2_product has no column named image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django_HW\HW_2\views.py", line 40, in catalog_form
+    product.save()
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table HW_2_product has no column named image
+ERROR 2023-09-21 12:55:09,230 basehttp 15980 7608 "POST /product/add/ HTTP/1.1" 500 155212
+INFO 2023-09-21 13:47:28,754 autoreload 20532 21720 Watching for file changes with StatReloader
+INFO 2023-09-21 13:47:36,725 basehttp 20532 17848 "GET /product/add/ HTTP/1.1" 200 1492
+INFO 2023-09-21 13:47:53,660 basehttp 20532 17848 "POST /product/add/ HTTP/1.1" 200 1560
+INFO 2023-09-21 13:50:20,641 autoreload 20532 21720 D:\Django_HW\HW_2\urls.py changed, reloading.
+INFO 2023-09-21 13:50:21,755 autoreload 11996 24968 Watching for file changes with StatReloader
+INFO 2023-09-21 13:50:31,381 basehttp 11996 21804 "GET /add_product HTTP/1.1" 301 0
+INFO 2023-09-21 13:50:31,412 basehttp 11996 25584 "GET /add_product/ HTTP/1.1" 200 1492
+INFO 2023-09-21 13:53:12,931 basehttp 11996 25584 "GET /add_product/ HTTP/1.1" 200 1492
+INFO 2023-09-21 13:53:26,569 basehttp 11996 25584 "POST /add_product/ HTTP/1.1" 200 1562

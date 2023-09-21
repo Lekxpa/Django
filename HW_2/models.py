@@ -19,6 +19,9 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     quantity = models.IntegerField()
     date_of_add = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='product_image',
+                              default='default.png',
+                              verbose_name='Изображение')
 
     objects = models.Manager()
 
