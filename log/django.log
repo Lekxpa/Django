@@ -1153,3 +1153,127 @@ INFO 2023-09-21 13:50:31,381 basehttp 11996 21804 "GET /add_product HTTP/1.1" 30
 INFO 2023-09-21 13:50:31,412 basehttp 11996 25584 "GET /add_product/ HTTP/1.1" 200 1492
 INFO 2023-09-21 13:53:12,931 basehttp 11996 25584 "GET /add_product/ HTTP/1.1" 200 1492
 INFO 2023-09-21 13:53:26,569 basehttp 11996 25584 "POST /add_product/ HTTP/1.1" 200 1562
+INFO 2023-09-25 10:47:15,927 autoreload 24792 7448 Watching for file changes with StatReloader
+INFO 2023-09-25 10:47:34,446 basehttp 24792 10448 "GET / HTTP/1.1" 200 11
+INFO 2023-09-25 10:47:41,466 basehttp 24792 10448 "GET /admin HTTP/1.1" 301 0
+INFO 2023-09-25 10:47:41,483 basehttp 24792 21044 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-25 10:47:41,652 basehttp 24792 21044 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+INFO 2023-09-25 10:47:42,070 basehttp 24792 21044 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2023-09-25 10:47:42,071 basehttp 24792 17648 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2023-09-25 10:47:42,107 basehttp 24792 2632 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-09-25 10:47:42,107 basehttp 24792 21292 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2023-09-25 10:47:42,117 basehttp 24792 21044 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-09-25 10:47:42,118 basehttp 24792 5788 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2023-09-25 10:47:42,128 basehttp 24792 23496 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2023-09-25 10:49:22,786 autoreload 24792 7448 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-25 10:49:24,043 autoreload 10208 11904 Watching for file changes with StatReloader
+INFO 2023-09-25 10:49:37,731 autoreload 24196 5448 Watching for file changes with StatReloader
+INFO 2023-09-25 10:49:44,944 basehttp 24196 19040 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-25 10:49:45,018 basehttp 24196 19040 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-09-25 10:53:04,161 autoreload 10152 24544 Watching for file changes with StatReloader
+INFO 2023-09-25 10:53:36,568 basehttp 10152 20496 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-25 10:53:36,661 basehttp 10152 20496 "GET /admin/ HTTP/1.1" 200 5858
+INFO 2023-09-25 10:53:36,800 basehttp 10152 20496 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-09-25 10:53:36,837 basehttp 10152 22988 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-09-25 10:53:36,840 basehttp 10152 20496 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-09-25 11:00:05,132 autoreload 10152 24544 D:\Django_HW\HW_2\models.py changed, reloading.
+INFO 2023-09-25 11:00:06,359 autoreload 21356 2532 Watching for file changes with StatReloader
+INFO 2023-09-25 11:00:53,007 autoreload 21356 2532 D:\Django_HW\HW_2\models.py changed, reloading.
+INFO 2023-09-25 11:00:54,482 autoreload 18876 21360 Watching for file changes with StatReloader
+INFO 2023-09-25 11:34:13,247 autoreload 11732 19368 Watching for file changes with StatReloader
+INFO 2023-09-25 11:34:18,921 basehttp 11732 25272 "GET /admin/ HTTP/1.1" 200 6968
+INFO 2023-09-25 11:35:08,524 autoreload 11732 19368 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:35:09,717 autoreload 8336 20372 Watching for file changes with StatReloader
+INFO 2023-09-25 11:35:59,846 autoreload 22044 22960 Watching for file changes with StatReloader
+INFO 2023-09-25 11:36:02,997 basehttp 22044 23220 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:38:17,451 autoreload 22044 22960 D:\Django_HW\HW_2\models.py changed, reloading.
+INFO 2023-09-25 11:38:18,505 autoreload 6756 17636 Watching for file changes with StatReloader
+INFO 2023-09-25 11:39:30,586 autoreload 6756 17636 D:\Django_HW\HW_2\models.py changed, reloading.
+INFO 2023-09-25 11:39:31,805 autoreload 17268 13604 Watching for file changes with StatReloader
+INFO 2023-09-25 11:41:50,562 autoreload 9800 7872 Watching for file changes with StatReloader
+INFO 2023-09-25 11:41:55,801 basehttp 9800 19964 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:42:03,721 basehttp 9800 19964 "GET /admin/HW_2/goods/add/ HTTP/1.1" 200 14128
+INFO 2023-09-25 11:42:03,777 basehttp 9800 24848 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-25 11:42:04,109 basehttp 9800 17632 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-09-25 11:42:04,146 basehttp 9800 17632 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-09-25 11:42:04,169 basehttp 9800 19964 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-09-25 11:42:04,216 basehttp 9800 17372 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-09-25 11:42:04,233 basehttp 9800 17632 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-09-25 11:42:04,237 basehttp 9800 15228 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-09-25 11:42:04,237 basehttp 9800 24848 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-09-25 11:42:04,256 basehttp 9800 17372 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+INFO 2023-09-25 11:42:04,303 basehttp 9800 22436 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-09-25 11:42:04,340 basehttp 9800 22436 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2023-09-25 11:42:04,342 basehttp 9800 19964 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-09-25 11:42:04,367 basehttp 9800 19964 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-09-25 11:42:04,373 basehttp 9800 22436 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-09-25 11:42:06,764 basehttp 9800 22436 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:47:52,458 autoreload 9800 7872 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:47:53,561 autoreload 25108 18788 Watching for file changes with StatReloader
+INFO 2023-09-25 11:48:34,998 autoreload 25108 18788 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:48:36,280 autoreload 23180 18940 Watching for file changes with StatReloader
+INFO 2023-09-25 11:49:05,632 autoreload 23180 18940 D:\Django_HW\HW_2\models.py changed, reloading.
+INFO 2023-09-25 11:49:06,760 autoreload 22888 2964 Watching for file changes with StatReloader
+INFO 2023-09-25 11:50:10,454 autoreload 22888 2964 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:50:11,504 autoreload 8128 5260 Watching for file changes with StatReloader
+INFO 2023-09-25 11:50:46,532 basehttp 8128 18636 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:50:55,114 basehttp 8128 18636 "GET /admin/HW_2/product/add/ HTTP/1.1" 200 12440
+INFO 2023-09-25 11:50:55,150 basehttp 8128 18636 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-25 11:51:01,284 basehttp 8128 18636 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:51:53,062 autoreload 8128 5260 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:51:54,138 autoreload 22956 16828 Watching for file changes with StatReloader
+INFO 2023-09-25 11:52:02,284 autoreload 22956 16828 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:52:03,425 autoreload 444 11004 Watching for file changes with StatReloader
+INFO 2023-09-25 11:52:55,448 autoreload 444 11004 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:52:56,732 autoreload 20272 18568 Watching for file changes with StatReloader
+INFO 2023-09-25 11:53:12,935 autoreload 20272 18568 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:53:14,041 autoreload 6732 25396 Watching for file changes with StatReloader
+INFO 2023-09-25 11:53:31,830 basehttp 6732 18496 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 11:56:15,462 autoreload 6732 25396 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:56:16,553 autoreload 12056 10380 Watching for file changes with StatReloader
+INFO 2023-09-25 11:56:37,081 autoreload 12056 10380 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:56:38,078 autoreload 5776 23732 Watching for file changes with StatReloader
+INFO 2023-09-25 11:56:47,782 autoreload 5776 23732 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:56:48,820 autoreload 22428 15976 Watching for file changes with StatReloader
+INFO 2023-09-25 11:58:22,157 autoreload 22428 15976 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 11:58:23,228 autoreload 23496 9424 Watching for file changes with StatReloader
+INFO 2023-09-25 12:01:54,532 autoreload 23496 9424 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:01:55,635 autoreload 16064 25444 Watching for file changes with StatReloader
+INFO 2023-09-25 12:02:24,648 autoreload 16064 25444 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:02:25,925 autoreload 17792 17564 Watching for file changes with StatReloader
+INFO 2023-09-25 12:12:56,664 autoreload 17792 17564 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:12:58,477 autoreload 6492 20036 Watching for file changes with StatReloader
+INFO 2023-09-25 12:16:48,104 autoreload 6492 20036 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:16:49,427 autoreload 15564 17860 Watching for file changes with StatReloader
+INFO 2023-09-25 12:18:38,315 autoreload 15564 17860 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:18:39,658 autoreload 444 16892 Watching for file changes with StatReloader
+INFO 2023-09-25 12:19:22,773 autoreload 444 16892 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:19:23,886 autoreload 18004 23872 Watching for file changes with StatReloader
+INFO 2023-09-25 12:22:07,952 autoreload 18816 24008 Watching for file changes with StatReloader
+INFO 2023-09-25 12:25:52,923 autoreload 18816 24008 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:25:54,229 autoreload 15088 22240 Watching for file changes with StatReloader
+INFO 2023-09-25 12:27:47,486 autoreload 15088 22240 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:27:49,037 autoreload 10380 1888 Watching for file changes with StatReloader
+INFO 2023-09-25 12:30:35,897 autoreload 10380 1888 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:30:37,346 autoreload 24680 19816 Watching for file changes with StatReloader
+INFO 2023-09-25 12:31:29,259 autoreload 24680 19816 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:31:30,387 autoreload 4996 23440 Watching for file changes with StatReloader
+INFO 2023-09-25 12:32:36,566 autoreload 4996 23440 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:32:37,724 autoreload 19852 14220 Watching for file changes with StatReloader
+INFO 2023-09-25 12:33:10,646 autoreload 19852 14220 D:\Django_HW\HW_2\admin.py changed, reloading.
+INFO 2023-09-25 12:33:11,697 autoreload 16728 17860 Watching for file changes with StatReloader
+INFO 2023-09-25 12:33:44,358 basehttp 16728 14424 "GET /admin/ HTTP/1.1" 200 8279
+INFO 2023-09-25 12:33:50,855 basehttp 16728 14424 "GET /admin/HW_2/client/add/ HTTP/1.1" 200 11754
+INFO 2023-09-25 12:33:50,919 basehttp 16728 14424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-25 12:34:03,498 basehttp 16728 14424 "GET /admin/auth/user/add/ HTTP/1.1" 200 12724
+INFO 2023-09-25 12:34:03,522 basehttp 16728 14424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-25 12:34:06,986 basehttp 16728 14424 "GET /admin/auth/group/add/ HTTP/1.1" 200 14974
+INFO 2023-09-25 12:34:07,010 basehttp 16728 14424 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-25 12:34:07,200 basehttp 16728 2636 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2023-09-25 12:34:07,224 basehttp 16728 25380 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+INFO 2023-09-25 12:34:07,299 basehttp 16728 2636 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-09-25 12:34:07,300 basehttp 16728 14424 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2023-09-25 12:34:07,303 basehttp 16728 25380 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2023-09-25 12:34:07,315 basehttp 16728 10348 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2023-09-25 12:34:11,466 basehttp 16728 10348 "GET /admin/HW_2/product/add/ HTTP/1.1" 200 11110
+INFO 2023-09-25 12:34:11,494 basehttp 16728 10348 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
