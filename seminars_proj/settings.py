@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,16 +21,39 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4_epx*0rd(gu#$z_tn3p2s0=yg(l&i62zhho-=n7^z^*)rbc%b'
+
+
+# SECRET_KEY = 'django-insecure-4_epx*0rd(gu#$z_tn3p2s0=yg(l&i62zhho-=n7^z^*)rbc%b'
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+
+
+
+# DEBUG = True
+
+
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+
+
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
     '192.168.1.67',
-    # '192.168.1.0/24'
+    # '192.168.1.0/24',
+    'lekxpa.pythonanywhere.com',
 ]
+
+
+STATIC_ROOT = BASE_DIR / 'static/'
+
 
 
 # Application definition
@@ -45,9 +69,11 @@ INSTALLED_APPS = [
     'my_HW_01',
     'my_app_2',
     'HW_2',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -81,10 +107,28 @@ WSGI_APPLICATION = 'seminars_proj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'lekxpa$default',
+            'USER': 'lekxpa',
+            'PASSWORD': os.getenv('Vfhecz25!'),
+            'HOST': 'lekxpa.mysql.pythonanywhere-services.com',
+            'OPTIONS': {
+                'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
+                'charset': 'utf8mb4',
+        },
     }
 }
 
@@ -234,3 +278,7 @@ LOGGING = {
         },
     },
 }
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

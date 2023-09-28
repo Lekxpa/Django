@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 # from HW_2.views import product_of_client
 
@@ -10,4 +10,5 @@ urlpatterns = [
     # path('orders/year/<int:year>/<int:pk>/', views.AllYearProducts.as_view(), name='orders_by_year'),
     # path('orders/monthly/<int:year>/<int:month>/<int:pk>/', views.AllMonthProducts.as_view(), name='orders_by_month'),
     # path('orders/week/<int:year>/<int:week>/<int:pk>/', views.AllWeekProducts.as_view(), name='orders_by_week'),
+    # path('__debug__/', include("debug_toolbar.urls")),
 ]

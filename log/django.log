@@ -1277,3 +1277,53 @@ INFO 2023-09-25 12:34:07,303 basehttp 16728 25380 "GET /static/admin/img/icon-un
 INFO 2023-09-25 12:34:07,315 basehttp 16728 10348 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
 INFO 2023-09-25 12:34:11,466 basehttp 16728 10348 "GET /admin/HW_2/product/add/ HTTP/1.1" 200 11110
 INFO 2023-09-25 12:34:11,494 basehttp 16728 10348 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-28 12:26:52,585 autoreload 2156 24156 Watching for file changes with StatReloader
+INFO 2023-09-28 12:27:00,681 basehttp 2156 16300 "GET /admin/HW_2/product/add/ HTTP/1.1" 200 20930
+INFO 2023-09-28 12:27:00,726 basehttp 2156 16300 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,734 basehttp 2156 16300 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,734 basehttp 2156 18976 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,747 basehttp 2156 18976 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,752 basehttp 2156 16300 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,753 basehttp 2156 18976 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,757 basehttp 2156 16300 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,770 basehttp 2156 16300 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,771 basehttp 2156 18976 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,779 basehttp 2156 18976 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,783 basehttp 2156 18976 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,812 basehttp 2156 7796 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,817 basehttp 2156 16300 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2023-09-28 12:27:00,841 basehttp 2156 22860 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,846 basehttp 2156 18976 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13404
+INFO 2023-09-28 12:27:00,844 basehttp 2156 19184 "GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+INFO 2023-09-28 12:27:00,867 basehttp 2156 18976 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,883 basehttp 2156 18976 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,891 basehttp 2156 18976 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,903 basehttp 2156 14884 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-28 12:27:00,919 basehttp 2156 18976 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-09-28 12:27:00,989 basehttp 2156 14884 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-09-28 12:27:00,996 basehttp 2156 18976 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2023-09-28 12:27:01,058 basehttp 2156 18976 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2023-09-28 12:33:12,174 autoreload 2156 24156 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:33:13,381 autoreload 3904 9780 Watching for file changes with StatReloader
+INFO 2023-09-28 12:33:25,816 autoreload 3904 9780 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:33:27,219 autoreload 16980 18512 Watching for file changes with StatReloader
+INFO 2023-09-28 12:33:55,750 autoreload 16980 18512 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:33:57,019 autoreload 11068 20800 Watching for file changes with StatReloader
+INFO 2023-09-28 12:34:06,456 autoreload 11068 20800 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:34:07,836 autoreload 14424 16568 Watching for file changes with StatReloader
+INFO 2023-09-28 12:34:39,539 autoreload 14424 16568 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:34:40,849 autoreload 22204 24184 Watching for file changes with StatReloader
+INFO 2023-09-28 12:34:58,754 autoreload 22204 24184 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:35:00,178 autoreload 21964 8128 Watching for file changes with StatReloader
+INFO 2023-09-28 12:36:37,900 autoreload 21964 8128 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:36:39,231 autoreload 18188 22168 Watching for file changes with StatReloader
+INFO 2023-09-28 12:36:47,641 autoreload 18188 22168 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:36:49,236 autoreload 6452 22588 Watching for file changes with StatReloader
+INFO 2023-09-28 12:42:31,016 autoreload 6452 22588 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:42:32,314 autoreload 24660 22544 Watching for file changes with StatReloader
+INFO 2023-09-28 12:45:04,813 autoreload 24660 22544 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:45:06,390 autoreload 23072 19868 Watching for file changes with StatReloader
+INFO 2023-09-28 12:46:02,631 autoreload 23072 19868 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:46:03,945 autoreload 18488 24996 Watching for file changes with StatReloader
+INFO 2023-09-28 12:48:24,865 autoreload 18488 24996 D:\Django_HW\seminars_proj\settings.py changed, reloading.
+INFO 2023-09-28 12:48:26,178 autoreload 24264 3696 Watching for file changes with StatReloader
